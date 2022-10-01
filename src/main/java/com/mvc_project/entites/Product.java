@@ -37,4 +37,5 @@ public class Product {
     public String getCost() {
         return cost;
     }
+
 }

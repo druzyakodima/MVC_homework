@@ -8,6 +8,7 @@ import java.security.ProtectionDomain;
 
 public class Launcher {
     public static void main(String[] args) throws Exception {
+
         Server server = new Server(8181);
         ProtectionDomain domain = Launcher.class.getProtectionDomain();
         URL location = domain.getCodeSource().getLocation();
@@ -17,5 +18,6 @@ public class Launcher {
         server.setHandler(webapp);
         server.start();
         server.join();
+
     }
 }
